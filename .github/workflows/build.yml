@@ -28,6 +28,7 @@ jobs:
 
   sonarqube:
     name: SonarQube
+    needs: build
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
